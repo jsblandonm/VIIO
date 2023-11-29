@@ -1,4 +1,4 @@
-#Desafío Técnico para Desarrollador Frontend
+# Desafío Técnico para Desarrollador Frontend
 
 Descripción del Proyecto
 ¡Saludos! Estoy emocionado de participar en este desafío técnico para evaluar mis habilidades como desarrollador frontend. En este proyecto, me centré en la implementación del frontend utilizando React, complementando el backend desarrollado en Node.js.

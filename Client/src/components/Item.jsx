@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Item.css";
 import { Link } from "react-router-dom";
 
+// Define el componente funcional Item que muestra un producto en la tienda
 function Item(props) {
   return (
     <div className="item">

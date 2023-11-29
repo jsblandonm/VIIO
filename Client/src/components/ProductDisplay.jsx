@@ -5,9 +5,13 @@ import { ShopContext } from "../context/ShopContext";
 
 import "../styles/ProductDisplay.css";
 
+// Define el componente ProductDisplay que muestra detalles del producto
 const ProductDisplay = (props) => {
+  // Obtiene el objeto de producto del prop
   const { product } = props;
+  // Obtiene la función addToCart del contexto ShopContext
   const { addToCart } = useContext(ShopContext);
+
   return (
     <div className="productdisplay">
       <div className="productdisplay-left">

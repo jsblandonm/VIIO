@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/DescriptionBox.css";
 
+// Define el componente funcional DescriptionBox
 const DescriptionBox = () => {
   return (
     <div className="descriptionbox">

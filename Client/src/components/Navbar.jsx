@@ -9,12 +9,12 @@ import cart from "../assets/cart_icon.png";
 
 import "../styles/Navbar.css";
 
+// Define el componente Navbar que representa la barra de navegación
 function Navbar() {
+  // Obtiene funciones y estados del contexto de autenticación y de la tienda
   const { isAuthenticated, logout, user } = useAuth();
   const [menu, setMenu] = useState("shop");
-
   const { getTotalCartItems } = useContext(ShopContext);
-
   return (
     <div className="navbar">
       <div className="nav-logo">

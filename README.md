@@ -1,12 +1,16 @@
+##Desafío Técnico para Desarrollador Frontend
+##Descripción del Proyecto
+¡Saludos! Estoy emocionado de participar en este desafío técnico para evaluar mis habilidades como desarrollador frontend. En este proyecto, me centré en la implementación del frontend utilizando React, complementando el backend desarrollado en Node.js.
 
+Tareas Realizadas:
 
-## Test Técnico para Desarrollador Frontend
+Mi enfoque estuvo en la creación de funcionalidades clave del frontend, incluyendo:
 
+Registro de usuarios.
+Inicio de sesión.
+Consulta de productos, con restricciones de autorización.
+Tecnologías Utilizadas:
 
-#Descripción
-
-Este proyecto consiste en el desarrollo de un backend en Node.js y un frontend en React como prueba técnica para evaluar las habilidades de un desarrollador fullstack.
-
-Mi prueba consisitia en realizar la parte del Front end, donde tenia que realizar el registro, inicio de sesion y consulta de productos si esta autorizado 
-
-El Front end se realizo con React 
+Frontend: React
+Backend: Node.js
+Instrucciones para Iniciar el Proyecto

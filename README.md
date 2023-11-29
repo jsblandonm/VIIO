@@ -23,7 +23,11 @@ Asegúrate de tener Node.js instalado y ejecuta el siguiente comando en la conso
 npm install
 ```
 
-## Luego, accede a la carpeta 'client' e instala los módulos con:
+ Luego, accede a la carpeta 'client' e instala los módulos con:
+
+```sh
+cd client
+```
 
 ```sh
 npm install

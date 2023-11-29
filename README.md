@@ -15,3 +15,22 @@ Tecnologías Utilizadas:
 Frontend: React
 Backend: Node.js
 Instrucciones para Iniciar el Proyecto
+
+# Instalación de Node Modules:
+Asegúrate de tener Node.js instalado y ejecuta el siguiente comando en la consola en la carpeta principal del proyecto:
+
+npm install
+
+# Luego, accede a la carpeta 'client' e instala los módulos con:
+
+npm install
+
+# Iniciar el Backend:
+Abre una consola en la carpeta principal y ejecuta:
+
+npm run build
+
+# Iniciar el Frontend:
+En otra consola, dirígete a la carpeta 'client' y ejecuta:
+
+npm run build

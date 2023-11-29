@@ -8,6 +8,7 @@ import Cookies from "js-cookie";
 
 export const AuthContext = createContext();
 
+// Hook personalizado para acceder al contexto de autenticación
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -17,11 +18,16 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
+  // Estado para el usuario actual
   const [user, setUser] = useState(null);
+  // Estado para indicar si el usuario está autenticado
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  // Estado para manejar errores
   const [errors, setErrors] = useState([]);
+  // Estado para indicar si la autenticación está en curso
   const [loading, setLoading] = useState(true);
 
+  // Función para el registro de usuarios
   const signup = async (user) => {
     try {
       const res = await registerRequest(user);
@@ -34,6 +40,7 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  // Función para el inicio de sesión
   const signin = async (user) => {
     try {
       const res = await loginRequest(user);
@@ -48,12 +55,14 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  // Función para cerrar sesión
   const logout = () => {
     Cookies.remove("token");
     setIsAuthenticated(false);
     setUser(null);
   };
 
+  // Manejo de errores: se limpian después de 5 segundos
   useEffect(() => {
     if (errors.length > 0) {
       const timer = setTimeout(() => {
@@ -63,6 +72,7 @@ export const AuthProvider = ({ children }) => {
     }
   }, [errors]);
 
+  // Comprobación de autenticación al cargar la aplicación
   useEffect(() => {
     async function checkLogin() {
       const cookies = Cookies.get();
@@ -91,6 +101,7 @@ export const AuthProvider = ({ children }) => {
     checkLogin();
   }, []);
 
+  // Proporcionar el contexto de autenticación y renderizar los componentes hijos
   return (
     <AuthContext.Provider
       value={{

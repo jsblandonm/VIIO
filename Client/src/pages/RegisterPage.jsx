@@ -22,9 +22,9 @@ function RegisterPage() {
 
   return (
     <div className="flex h-[calc(100vh-100px)] items-center justify-center">
-      <div className=" bg-zinc-800 max-w-md w-full p-10 rounded-md">
+      <div className=" bg-zinc-200 max-w-md w-full p-10 rounded-md">
         {registerErrors.map((error, i) => (
-          <div className="bg-red-500 p-2 text-white" key={i}>
+          <div className="bg-red-500 p-2 text-white text-center my-2" key={i}>
             {error}
           </div>
         ))}
@@ -34,7 +34,7 @@ function RegisterPage() {
           <input
             type="text"
             {...register("username", { required: true })}
-            className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+            className="w-full bg-slate-50 text-black px-5 py-2 rounded-md my-2"
             placeholder="username"
           />
           {errors.username && (
@@ -43,14 +43,14 @@ function RegisterPage() {
           <input
             type="email"
             {...register("email", { required: true })}
-            className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+            className="w-full bg-slate-50 text-black px-5 py-2 rounded-md my-2"
             placeholder="email"
           />
           {errors.email && <p className="text-red-500">Email is required</p>}
           <input
             type="password"
             {...register("password", { required: true })}
-            className="w-full bg-zinc-700 text-white px-4 py-2 rounded-md my-2"
+            className="w-full bg-slate-50 text-black px-5 py-2 rounded-md my-2"
             placeholder="password"
           />
           {errors.password && (
@@ -59,7 +59,7 @@ function RegisterPage() {
 
           <button
             type="submit"
-            className="w-full bg-blue-400 hover:bg-blue-300 text-white px-4 py-2 rounded-md my-2 "
+            className="w-full bg-orange-400 hover:bg-orange-300 text-white px-4 py-2 rounded-md my-2 "
           >
             Register
           </button>
